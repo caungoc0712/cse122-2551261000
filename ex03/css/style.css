@@ -1,0 +1,77 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  padding: 40px 16px;
+  background: linear-gradient(180deg, #7ec8e3, #0a5c8a);
+  font-family: "Times New Roman", Times, serif;
+}
+
+.bai-viet {
+  width: 820px;
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 28px;
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 10px;
+  box-shadow: 0 12px 32px rgba(4, 40, 60, 0.35);
+}
+
+.bai-viet::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.bai-viet h1 {
+  margin: 0 0 20px;
+  text-align: center;
+  color: #0b3d5c;
+  font-size: 1.75rem;
+  line-height: 1.3;
+}
+
+.sapo {
+  margin: 0 0 20px;
+  padding: 14px 18px;
+  background: #0b3d5c;
+  color: #ffffff;
+  font-style: italic;
+  line-height: 1.6;
+  border-radius: 6px;
+}
+
+.bai-viet img {
+  float: right;
+  width: 330px;
+  margin: 4px 0 14px 20px;
+  border-radius: 8px;
+  box-shadow: 0 6px 16px rgba(4, 40, 60, 0.3);
+}
+
+.than-bai {
+  margin: 0 0 16px;
+  color: #22333d;
+  line-height: 1.75;
+  text-align: justify;
+}
+
+p.than-bai::first-letter {
+  float: left;
+  font-size: 3rem;
+  font-weight: 700;
+  line-height: 0.85;
+  padding: 0.1rem 0.4rem 0 0;
+  color: #0b3d5c;
+}
+
+@media (max-width: 700px) {
+  .bai-viet img {
+    float: none;
+    width: 100%;
+    margin: 0 0 16px;
+  }
+}
